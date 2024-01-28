@@ -11,6 +11,22 @@ $(document).ready(function(){
         $("h2").css('background-color', 'lightblue'); 
     });
 
+    //eq(index)
+    $("h2").eq( 0 ).hover(function(){
+        $("h2").eq( 0 ).css('background-color', 'seagreen'); 
+        $("h2").eq( 1 ).css('background-color', 'white'); 
+        $("h2").eq( 2 ).css('background-color', 'white'); 
+        $("h2").eq( 3 ).css('background-color', 'white'); 
+        $("h2").eq( 4 ).css('background-color', 'white'); 
+        $("h2").eq( 5 ).css('background-color', 'white'); 
+
+    });
+    $("h2").eq( 1 ).hover(function(){
+        $("h2").eq( 1 ).css('background-color', 'lightblue'); 
+        $("h2").eq( 0 ).css('background-color', 'white'); 
+    });
+
+
     /*
     this will apply larger font size to the active h2 element 
     by adding the h2_font_size class but 
@@ -72,7 +88,7 @@ $(document).ready(function(){
 
     //applies colour black to body background when mouse enters over buttons
     $(".bottom_button").mouseenter(function(){
-        $("body").css( "background-color", "black"); 
+        $("body").css( "background-color", "turquoise"); 
     });
 
     //applies colour grey to body background when mouse leaves buttons
